@@ -2,13 +2,13 @@
 <hudson>
   <disabledAdministrativeMonitors/>
   <version>2.129</version>
-  <installStateName>NEW</installStateName>
+  <installStateName>INITIAL_SETUP_COMPLETED</installStateName>
   <numExecutors>2</numExecutors>
   <mode>NORMAL</mode>
   <useSecurity>false</useSecurity>
   <authorizationStrategy class="hudson.security.AuthorizationStrategy$Unsecured"/>
   <securityRealm class="hudson.security.SecurityRealm$None"/>
-  <disableRememberMe>false</disableRememberMe>
+  <disableRememberMe>true</disableRememberMe>
   <projectNamingStrategy class="jenkins.model.ProjectNamingStrategy$DefaultProjectNamingStrategy"/>
   <workspaceDir>${JENKINS_HOME}/workspace/${ITEM_FULL_NAME}</workspaceDir>
   <buildsDir>${ITEM_ROOTDIR}/builds</buildsDir>
@@ -30,7 +30,7 @@
   <slaveAgentPort>-1</slaveAgentPort>
   <label></label>
   <crumbIssuer class="hudson.security.csrf.DefaultCrumbIssuer">
-    <excludeClientIPFromCrumb>false</excludeClientIPFromCrumb>
+    <excludeClientIPFromCrumb>true</excludeClientIPFromCrumb>
   </crumbIssuer>
   <nodeProperties/>
   <globalNodeProperties/>
